@@ -1,0 +1,5 @@
+-once send message is pressed:
++on flask handle the send message by getting the text
++add the message to the corresponding database. 
++on javascript display the message.
++create multiple user sessions.
