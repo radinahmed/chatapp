@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+</head>
+<ul>
+        <li><a href="{{ url_for('login') }}">Login</a></li>
+        <li><a class="active">Register</a></li>
+        <li><a href="w">Homepage</a></li>
+        <li><a href="a">Help</a></li>
+
+
+</ul>
+<body>
+<h1>Nothing to see here</h1>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <h3>{{ message }}</h3>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+    <div class="p">
+        <form action="/register" id="register-form" method="post"  enctype="multipart/form-data" class="container">
+            <div class="p1">
+            <p>Registration</p>
+            <label for="username">Enter your username: </label><br/>
+            <input id="username" type="text" name="uname"><br/>
+           
+            <label for="password">Password: </label><br/>
+            <input id="password" type="password" name="password"><br/>
+            <i class="far fa-eye" id="togglePassword"></i>
+
+            <input type="submit" value="Register" class="btn">
+            </div>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+    
+</body>
+</html>
