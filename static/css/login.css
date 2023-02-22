@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    
+}
+body{
+    background-color: teal;
+
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.container{
+    background: wheat;
+    margin: auto;
+    max-width: 300px;
+    border: 3px solid darkblue;
+    padding: 20px;
+    position: absolute;
+    top: 60%; 
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+/* The code underneath is from w3 schools https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_form_on_image */
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+.btn {
+    background-color: lightslategray;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+  
+.btn:hover {
+    opacity: 1;
+}
+
+i{
+    margin: auto; 
+    position: absolute;
+
+    left: 85%;
+    bottom: 30%;
+    cursor: pointer;  
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
